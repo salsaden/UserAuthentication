@@ -17,10 +17,15 @@ def login(request):
     return render(request, 'login.html')
 
 
+# def home(request):
+#     if request.method == 'POST':
+#         if Member.objects.filter(username=request.POST['username'], password=request.POST['password']).exists():
+#             member = Member.objects.get(username=request.POST['username'], password=request.POST['password'])
+#             return render(request, 'home.html', {'member': member})
+#     else:
+#         return render(request, 'login.html')
 def home(request):
-    if request.method == 'POST':
-        if Member.objects.filter(username=request.POST['username'], password=request.POST['password']).exists():
-            member = Member.objects.get(username=request.POST['username'], password=request.POST['password'])
-            return render(request, 'home.html', {'member': member})
-    else:
-        return render(request, 'login.html')
+    return render(request, 'home.html')
+
+def courses(request):
+    return render(request, 'Courses.html')

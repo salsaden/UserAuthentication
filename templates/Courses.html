@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="{% static 'images/emobilislogo.jpeg' %}">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <title>Courses</title>
+</head>
+<body>
+<div class="container-fluid bg-danger text-center p-5 text-white">
+    <h1>Our Courses</h1>
+    <img src="{% static 'images/courseshat.png' %}" alt="">
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-3 bg-primary mt-5 text-white">
+            <h1>Cyber Security</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad amet, asperiores, autem blanditiis commodi delectus deleniti deserunt doloribus, earum eligendi ex hic laborum quibusdam sint voluptates. Blanditiis nisi sint tenetur!</p>
+            <img src="{% static 'images/cybersec.jpeg' %}" alt="">
+        </div>
+        <div class="col-3 bg-danger-subtle mt-5 text-black">
+            <h1>Artificial Intelligence</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium, aperiam architecto commodi culpa distinctio dolorem, earum et ipsa itaque maxime molestias natus necessitatibus non, odit quam quo repellat sequi tempore.</p>
+            <img src="{% static 'images/ai.jpeg'%}" alt="">
+        </div>
+        <div class="col-3 bg-black mt-5 text-white">
+            <h1>Web Development</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium at doloribus ex excepturi illo possimus quasi. Aut dignissimos dolores, ex expedita explicabo fugit, impedit nostrum officia perferendis porro ratione voluptate.</p>
+            <img src="{% static 'images/softwaredev.jpeg' %}" alt="">
+        </div>
+        <div class="col-3 bg-dark-subtle mt-5 text-black">
+            <h1>Data Science</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam ea, eligendi impedit quasi reiciendis sed ut voluptatem. Aperiam dolor dolore est expedita numquam quae quo sequi sint voluptatibus voluptatum? Reiciendis.</p>
+            <img src="{% static 'images/datascience.png' %}" alt="">
+        </div>
+
+    </div>
+</div>
+</body>
+</html>
