@@ -1,5 +1,5 @@
-{% extends 'base.html' %}
-{% block body %}
+{#{% extends 'base.html' %}#}
+{#{% block body %}#}
 <!doctype html>
 <html lang="en">
 <head>
@@ -13,9 +13,11 @@
     <script src="{% static 'js/bootstrap.min.js' %}"></script>
 </head>
 <body>
+<div style="background-color: #f5dd5d; margin-left: 400px; margin-top: 100px; padding: 50px; margin-right: 400px">
+
 <h1 style="text-align: center;">Login</h1>
 
-<form method="POST" action="{% url 'home' %}">
+<form method="POST" action="{% url 'mainpage' %}">
     {% csrf_token %}
 
     <label for="uname" class="form-label">Username</label>
@@ -30,9 +32,9 @@
 
 
 </form>
-
+</div>
 </body>
 </html>
-{% endblock %}
+{#{% endblock %}#}
 
 
